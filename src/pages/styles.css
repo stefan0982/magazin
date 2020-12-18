@@ -1,0 +1,65 @@
+body, html, main { margin:0; padding:0; box-sizing:border-box; }
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.link-disable {
+    text-decoration: none;
+    user-select: none;
+}
+
+.fab {
+    margin: 0;
+    top: auto;
+    right: 20px;
+    bottom: 48vh;
+    color: white;
+    left: auto;
+    position: fixed;
+    background-color: green;
+}
+
+
+@media only screen and (min-width: 976px) {
+    .header {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    .layout {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .layout {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .header {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+    .layout {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+}
+
+
+
