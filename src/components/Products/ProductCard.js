@@ -20,7 +20,7 @@ const useStyles = makeStyles({
 })
 
 
-const ProductCard = ( { name, price, id, imaginea, categoria, recommended = false } ) => {
+const ProductCard = ( { name, price, imaginea, categoria, recommended = false } ) => {
 
   const classes = useStyles()
 
@@ -33,13 +33,6 @@ const ProductCard = ( { name, price, id, imaginea, categoria, recommended = fals
         >
           <CardActionArea>
             <Img fluid={imaginea}/>
-            {/*<CardMedia*/}
-            {/*  component="img"*/}
-            {/*  alt="Contemplative Reptile"*/}
-            {/*  height="240"*/}
-            {/*  image={ imaginea }*/}
-            {/*  title="Contemplative Reptile"*/}
-            {/*/>*/}
             <CardContent style={{ height: 130 }}>
               <Typography
                   gutterBottom
