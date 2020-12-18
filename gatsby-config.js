@@ -9,9 +9,11 @@ module.exports = {
     },
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
+    // "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
+    `gatsby-plugin-material-ui`,
     "gatsby-transformer-sharp",
+    `gatsby-plugin-layout`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
