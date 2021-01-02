@@ -14,7 +14,7 @@ const SubcategoriesTemplate = ({data}) => {
 
 export const query = graphql`
   query($category: String!){
-  subcategories:allContentfulSubcategorii(filter: {categoria: {denumirea: {eq: $category}}}) {
+  subcategories:allContentfulSubcategorii(filter: {categoria: {denumirea: {eq: $category}}}, sort: {fields: createdAt, order: ASC}) {
     edges {
       node {
         denumirea
