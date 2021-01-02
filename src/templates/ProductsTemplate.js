@@ -4,7 +4,7 @@ import Grid         from '@material-ui/core/Grid'
 import LowerBar from "../components/Navbar/LowerBar";
 import ProductCard from "../components/Products/ProductCard";
 
-const ProductsTemplate = ({ data }) => {
+const ProductsTemplate = ( { data }) => {
   return (
       <>
         <LowerBar/>
@@ -29,14 +29,13 @@ const ProductsTemplate = ({ data }) => {
             )
           } ) }
         </Grid>
-
       </>
   )
 }
 
 export const query = graphql`
-  query($category: String!) {
-  products:allContentfulProdus(filter: {categoria: {elemMatch: {denumirea: {eq: $category}}}}) {
+  query($subcategory: String!) {
+  products:allContentfulProdus(filter: {subcategoria: {elemMatch: {denumirea: {eq: $subcategory}}}}) {
     edges {
       node {
         denumirea

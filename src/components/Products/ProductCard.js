@@ -20,14 +20,14 @@ const useStyles = makeStyles({
 })
 
 
-const ProductCard = ( { name, price, imaginea, categoria, recommended = false } ) => {
+const ProductCard = ( { name, price, imaginea, categoria, subcategoria, recommended = false } ) => {
 
   const classes = useStyles()
 
   return (
       <Card className={classes.root}>
         <Link
-            to={recommended === true ? `/${slug(categoria)}/${slug(name)}` : `${slug(name)}/`}
+            to={recommended === true ? `/${slug(categoria)}/${slug(subcategoria)}/${slug(name)}` : `${slug(name)}/`}
             className="link-disable"
             style={{ color: '#3f51b5' }}
         >

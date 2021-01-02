@@ -16,8 +16,11 @@ const query = graphql`
             ...GatsbyContentfulFluid
           }
         }
-        categoria {
+        subcategoria {
           denumirea
+          categoria {
+            denumirea
+          }
         }
       }
     }
@@ -47,7 +50,8 @@ const Recommended = () => {
                       id={node.id}
                       imaginea={node.imaginile[0].fluid}
                       recommended={true}
-                      categoria={node.categoria[0].denumirea}
+                      categoria={node.subcategoria[0].categoria.denumirea}
+                      subcategoria={node.subcategoria[0].denumirea}
                   />
                 </Grid>
             )

@@ -1,13 +1,16 @@
-import React from 'react';
-import LowerBar from "../components/Navbar/LowerBar";
+import React        from 'react'
+import LowerBar     from '../components/Navbar/LowerBar'
+import DeliveryCard from '../components/Delivery/DeliveryCard'
+import DeliveryMap  from '../components/Delivery/DeliveryMap'
 
 const Delivery = () => {
   return (
-      <div>
-        <LowerBar/>
-        datele livrarii
-      </div>
-  );
-};
+    <>
+      <LowerBar />
+      <DeliveryCard />
+      <DeliveryMap/>
+    </>
+  )
+}
 
-export default Delivery;
+export default Delivery

@@ -10,14 +10,25 @@ const style = {
   margin: 0,
   top: 'auto',
   right: 20,
-  bottom: `48vh`,
-  // fontWeight: 700,
-  // fontSize: '1.2rem',
+  bottom: `49vh`,
   color: 'white',
   left: 'auto',
   position: 'fixed',
   backgroundColor: 'green'
 };
+
+// const fb = {
+//   marginTop: 30,
+//   top: 'auto',
+//   right: 20,
+//   bottom: `45vh`,
+//   color: 'white',
+//   left: 'auto',
+//   position: 'fixed',
+//   backgroundColor: 'green',
+//   textTransform: 'lowercase',
+//   fontSize: '30px'
+// };
 
 
 class Layout
@@ -43,10 +54,21 @@ class Layout
                     rel="noopener noreferrer"
                     className="link-disable"
                 >
-                  <Fab style={style} size="small">
-                    <CallIcon fontSize={"small"}/>
+                  <Fab style={style} size={"medium"}>
+                    <CallIcon />
                   </Fab>
                 </a>
+                {/*<a*/}
+                {/*    href="/"*/}
+                {/*    // target="_blank"*/}
+                {/*    rel="noopener noreferrer"*/}
+                {/*    className="link-disable"*/}
+                {/*>*/}
+                {/*  <Fab style={fb} size={"medium"}>*/}
+                {/*    <FacebookIcon />*/}
+                {/*    */}
+                {/*  </Fab>*/}
+                {/*</a>*/}
               </div>
               <Footer/>
             </div>

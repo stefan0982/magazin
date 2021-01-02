@@ -48,7 +48,7 @@ export const query = graphql`
     }
     dimensiuni
     specificatii
-    descriere 
+    descriere
   }
 }
 `

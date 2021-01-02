@@ -67,7 +67,7 @@ const Footer = () => {
                     />
                   </ListItemIcon>
                   <ListItemText
-                      primary="protos.librarie@gmail.com"
+                      primary="protos.magazin@gmail.com"
                   />
                 </ListItem>
                 <ListItem>
