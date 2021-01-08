@@ -6,7 +6,7 @@ import DeliveryMap  from '../components/Delivery/DeliveryMap'
 const Delivery = () => {
   return (
     <>
-      <LowerBar />
+      <LowerBar delivery={true}/>
       <DeliveryCard />
       <DeliveryMap/>
     </>

@@ -26,8 +26,7 @@ export default function DeliveryCard() {
                   <Typography variant="body1"
                               component="p">
                     {data.language ? ` Produsele noastre pot fi procurate la Magazinul bisericesc aflat pe adresa str. Mitropolit Varlaam
-                    76
-                    (intersecție cu str. Armenească, colț cu Piața centrală).` :
+                    76(intersecție cu str. Armenească, colț cu Piața centrală).` :
                         `Наши товары можно купить в Православном церковном магазине который находится по адресу ул. Митрополит Варлаам 76 (на перекрестке с ул. Арменяскэ).`}
 
                     <br/><br/>
